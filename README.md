@@ -52,3 +52,11 @@ make install
 ```bash
 make brain-games
 ```
+
+## Отладка публикации
+
+Для отладки публикации введите:
+
+```bash
+make publish
+```
