@@ -60,3 +60,7 @@ make brain-games
 ```bash
 make publish
 ```
+
+## Аксинема с примером установки пакета, запуска игры "Проверка на чётность"
+
+[Перейти по ссылке](https://asciinema.org/a/q4INa1CnJh2CnyY7)
