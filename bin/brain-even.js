@@ -2,4 +2,4 @@
 
 import parityCheck from "../src/gemes/even.js";
 
-parityCheck();
+runEvenGame();

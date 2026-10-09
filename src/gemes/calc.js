@@ -1,39 +1,31 @@
-import readlineSync from "readline-sync";
-import welcomeUser from "../cli.js";
+import runGame from '../index.js';
 
-const calculator = () => {
-  const userName = welcomeUser();
-  const operator = ["+", "-", "*"];
-  console.log("What is the result of the expression?");
+const description = "What is the result of the expression?";
 
-  for (let i = 0; i < 3; i += 1) {
+const generateRound = () => {
     const number1 = Math.floor(Math.random() * 100);
     const number2 = Math.floor(Math.random() * 100);
+
+    const operator = ["+", "-", "*"];
     let operatorSelection = operator[i];
 
     let correctAnswer;
 
     if (operatorSelection === "+") {
-      correctAnswer = number1 + number2;
+        correctAnswer = number1 + number2;
     } else if (operatorSelection === "-") {
-      correctAnswer = number1 - number2;
+        correctAnswer = number1 - number2;
     } else if (operatorSelection === "*") {
-      correctAnswer = number1 * number2;
+        correctAnswer = number1 * number2;
     }
 
-    console.log(`Question: ${number1} ${operatorSelection} ${number2}`);
+    const question = `${number1} ${operator} ${number2}`;
 
-    const userResponse = readlineSync.question("Your answer: ");
-
-    if (userResponse === String(correctAnswer)) {
-      console.log("Correct!");
-    } else {
-      console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
+    return [question, String(correctAnswer)];
 };
 
-export default calculator;
+const runCalcGame = () => {
+    runGame(description, generateRound);
+};
+
+export default runCalcGame;
