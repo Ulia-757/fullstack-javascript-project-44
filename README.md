@@ -67,9 +67,12 @@ make publish
 
 ## Аксинема с примером запуска игры "Калькулятор"
 
-[Перейти по ссылке](https://asciinema.org/a/fwuGolbznLAG7Jut)
+[Перейти по ссылке](https://asciinema.org/a/Wj06wDro8RVnjuWn)
 
 ## Аксинема с примером запуска игры "НОД"
 
-[Перейти по ссылке](https://asciinema.org/a/x62RQs9Hg35YpRs5)
+[Перейти по ссылке](https://asciinema.org/a/67DtYiwjdPP5zJKN)
 
+## Аксинема с примером запуска игры "Арифметическая прогрессия"
+
+[Перейти по ссылке](https://asciinema.org/a/jzEGWHHVtp0je2g9)
