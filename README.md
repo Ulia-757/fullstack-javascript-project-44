@@ -76,3 +76,7 @@ make publish
 ## Аксинема с примером запуска игры "Арифметическая прогрессия"
 
 [Перейти по ссылке](https://asciinema.org/a/jzEGWHHVtp0je2g9)
+
+## Аксинема с примером запуска игры "Простое ли число?"
+
+[Перейти по ссылке](https://asciinema.org/a/CHABapMvtxqDxGEf)
