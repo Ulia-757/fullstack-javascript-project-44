@@ -1,31 +1,31 @@
-import runGame from '../index.js';
+import runGame from "../index.js";
 
 const description = "What is the result of the expression?";
 
 const generateRound = () => {
-    const number1 = Math.floor(Math.random() * 100);
-    const number2 = Math.floor(Math.random() * 100);
+  const number1 = Math.floor(Math.random() * 100);
+  const number2 = Math.floor(Math.random() * 100);
 
-    const operator = ["+", "-", "*"];
-    let operatorSelection = operator[i];
+  const operator = ["+", "-", "*"];
+  let operatorSelection = operator[i];
 
-    let correctAnswer;
+  let correctAnswer;
 
-    if (operatorSelection === "+") {
-        correctAnswer = number1 + number2;
-    } else if (operatorSelection === "-") {
-        correctAnswer = number1 - number2;
-    } else if (operatorSelection === "*") {
-        correctAnswer = number1 * number2;
-    }
+  if (operatorSelection === "+") {
+    correctAnswer = number1 + number2;
+  } else if (operatorSelection === "-") {
+    correctAnswer = number1 - number2;
+  } else if (operatorSelection === "*") {
+    correctAnswer = number1 * number2;
+  }
 
-    const question = `${number1} ${operator} ${number2}`;
+  const question = `${number1} ${operator} ${number2}`;
 
-    return [question, String(correctAnswer)];
+  return [question, String(correctAnswer)];
 };
 
 const runCalcGame = () => {
-    runGame(description, generateRound);
+  runGame(description, generateRound);
 };
 
 export default runCalcGame;

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import parityCheck from "../src/gemes/even.js";
+import runEvenGame from "../src/gemes/even.js";
 
 runEvenGame();
