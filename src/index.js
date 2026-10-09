@@ -9,7 +9,7 @@ const runGame = (description, generateRound) => {
   console.log(description);
 
   for (let i = 0; i < roundsCount; i += 1) {
-    const [question, correctAnswer] = generateRound();
+    const [question, correctAnswer] = generateRound(i);
 
     console.log(`Question: ${question}`);
 

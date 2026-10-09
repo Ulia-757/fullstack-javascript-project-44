@@ -2,12 +2,13 @@ import runGame from "../index.js";
 
 const description = "What is the result of the expression?";
 
-const generateRound = () => {
+const operator = ["+", "-", "*"];
+
+const generateRound = (roundIndex) => {
   const number1 = Math.floor(Math.random() * 100);
   const number2 = Math.floor(Math.random() * 100);
 
-  const operator = ["+", "-", "*"];
-  let operatorSelection = operator[i];
+  let operatorSelection = operator[roundIndex];
 
   let correctAnswer;
 
