@@ -20,7 +20,7 @@ const generateRound = (roundIndex) => {
     correctAnswer = number1 * number2;
   }
 
-  const question = `${number1} ${operator} ${number2}`;
+  const question = `${number1} ${operatorSelection} ${number2}`;
 
   return [question, String(correctAnswer)];
 };
